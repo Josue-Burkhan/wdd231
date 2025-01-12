@@ -185,6 +185,7 @@ h4 {
     margin: 80px auto 0 auto;
 
 }
+
 .certificate-section {
     display: flex;
     flex-direction: column;
@@ -197,6 +198,7 @@ h4 {
 .certificate-content {
     height: 100%;
 }
+
 .first-part-courses {
     height: 70px;
     display: flex;
@@ -204,9 +206,10 @@ h4 {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    gap:  10px;
+    gap: 10px;
 }
-.first-part-courses a {
+
+.first-part-courses button {
     padding: 10px 5px;
     width: 120px;
     text-align: center;
@@ -214,6 +217,7 @@ h4 {
     border-radius: 5px;
     color: #fff;
     background-color: #1D2C40;
+    cursor: pointer;
 }
 
 .second-part-courses {
@@ -224,12 +228,14 @@ h4 {
     justify-content: center;
     justify-items: center;
 }
-.second-part-courses a {
+
+.second-part-courses button {
     padding: 10px 5px;
     width: 90%;
     text-align: center;
     border: 1px solid #1D2C40;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
@@ -249,6 +255,10 @@ footer {
     color: #c1d320;
 }
 
+.first-par-footer {
+    display: flex;
+    gap: 10px;
+}
 
 
 
@@ -256,6 +266,7 @@ footer {
     header nav {
         height: auto;
     }
+
     #menu {
         display: block;
     }
@@ -271,6 +282,7 @@ footer {
         height: auto;
         padding: 10px 0;
     }
+
     .page-title img {
         margin: 0 10px;
     }
@@ -298,7 +310,7 @@ footer {
     }
 
 
-    .first-pag{
+    .first-pag {
         flex-direction: column;
     }
 
@@ -306,6 +318,7 @@ footer {
         margin-top: 30px;
         width: 100%;
     }
+
     .certificate-section {
         height: auto;
     }
@@ -314,12 +327,14 @@ footer {
         height: auto;
         padding: 5px 0;
     }
+
     .second-part-courses {
         margin: 15px 0;
         grid-template-columns: 1fr;
         height: auto;
         gap: 10px;
     }
+
     footer {
         height: auto;
         text-align: center;
