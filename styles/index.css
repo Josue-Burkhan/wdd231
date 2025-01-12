@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 * {
     margin: 0;
+    padding: 0;
     box-shadow: none;
 }
 
@@ -8,23 +8,47 @@ body {
     background-color: #e7e7e7;
     font-family: "inria sans";
 }
-header {
-    width: 100%;
-}
 
+/* Header Part */
 header nav {
     width: 100%;
     height: 50px;
     background-color: #BDD9F2;
 }
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    display: none;
+}
+
+#menu.open::before {
+    content: "x";
+    color: #fff;
+}
+
 .page-title {
     background-color: #1D2C40;
     text-align: center;
-    height: 70px;
+    height: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
+    gap: 30px
+}
+
+.page-title img {
+    box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
 }
 
 .menu {
@@ -35,130 +59,105 @@ header nav {
     text-decoration: none;
     height: 100%;
 }
-.menu li {
-    display: inline;
-    text-align: center;
-}
-.menu li a {
+
+.menu a {
     text-decoration: none;
     font-size: 2rem;
     color: black;
+    width: 100%;
+    text-align: center;
 }
-.menu li:hover {
+
+.menu a:hover {
     background-color: #7597c488;
     transition: 0.5s;
-}
-.menu li a:hover {
     font-size: 1.8rem;
-    transition: 0.5s;
 }
+
+
+/* Content Part */
 
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 60px 0;
 }
-.about-me {
+
+.first-pag {
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 0 3%;
-    border: 1px solid #1D2C40;
-    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3%;
 }
-.about-me-title {
+
+.title {
     background-color: #3D5473;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    border-top-left-radius: 19px;
-    border-top-right-radius: 19px;
-}
-.about-me h2 {
-    color: #fff;
-    text-align: center;
-    font-size: 1.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
-.about-me-bio {
-    margin: 10px 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about-me-bio p {
-    font-size: 1.5rem;
-    word-spacing: 5px;
-    text-align: justify;
-}
-.about-me-bio img {
-    width: 200px;
-    border-radius: 5px;
-    margin: 0 5%;
-}
-
-.my-country {
-    display: flex;
-    margin: 5%;
-    align-items: center;
-    justify-content: center;
-}
-h4 {
-    font-size: 1.7rem;
-    text-align: center;
-    font-weight: 700;
-}
-.my-country p {
-    margin: 0 5%;
-    font-size: 1.5rem;
-    word-spacing: 5px;
-    text-align: justify;
-}
-.img-my-country img {
-    width: 300px;
-    margin-top: 10px;
-}
-.img-my-country span i {
-    text-align: center;
-}
-hr {
-    width: 80%;
-    align-self: center;
-}
-
-.web-resources {
-    width: 25%;
-    height: auto;
-    border: 1px solid #1D2C40;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.web-resources-title {
-    background-color: #3D5473;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    border-top-left-radius: 19px;
-    border-top-right-radius: 19px;
-}
-.web-resources-title h2 {
+.title h2 {
     color: #fff;
     padding-left: 10px;
     text-align: center;
     font-size: 1.5rem;
 }
-.resources ul {
+
+.course-work {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    display: grid;
+    border: 1px solid #1D2C40;
+    border-radius: 5px;
+    background-color: #BDD9F2;
 }
 
-.resources ul li {
-    margin: 20px 0;
+.course-worke h2 {
+    color: #fff;
+    text-align: center;
     font-size: 1.5rem;
-    text-decoration: none;
 }
+
+
+
+.web-resources {
+    display: flex;
+    margin: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h4 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+.my-country {
+    width: 25%;
+    height: auto;
+    border: 1px solid #1D2C40;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.my-country img {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 80%;
+
+}
+
 .resources {
     width: 100%;
     height: 80%;
@@ -168,8 +167,73 @@ hr {
     align-content: center;
 }
 
+.resources ul {
+    padding-left: 100px;
+    width: 100%;
+    display: grid;
+}
+
+.resources ul li {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/*Second Page*/
+.second-pag {
+    width: 90%;
+    margin: 80px auto 0 auto;
+
+}
+.certificate-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 240px;
+    border: 1px solid #1D2C40;
+    border-radius: 5px;
+}
+
+.certificate-content {
+    height: 100%;
+}
+.first-part-courses {
+    height: 70px;
+    display: flex;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap:  10px;
+}
+.first-part-courses a {
+    padding: 10px 5px;
+    width: 120px;
+    text-align: center;
+    border: 1px solid #1D2C40;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1D2C40;
+}
+
+.second-part-courses {
+    height: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.second-part-courses a {
+    padding: 10px 5px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #1D2C40;
+    border-radius: 5px;
+}
+
 footer {
-    height: 80px;
+    height: 100px;
     width: 100%;
     background-color: #1D2C40;
     color: #fff;
@@ -181,26 +245,48 @@ footer {
     position: relative;
 }
 
+.modification {
+    color: #c1d320;
+}
+
+
+
+
 @media (max-width: 768px) {
     header nav {
         height: auto;
     }
+    #menu {
+        display: block;
+    }
+
     .menu li {
         text-align: end;
-        margin: 7px 10px 7px 0
+        margin: 7px 10px 7px 0;
+        display: flex;
+        flex-direction: column;
     }
+
     .page-title {
         height: auto;
         padding: 10px 0;
+    }
+    .page-title img {
+        margin: 0 10px;
     }
 
     .menu {
         grid-template-columns: 1fr;
         text-align: end;
+        flex-direction: column;
+        display: none;
+        align-items: flex-end;
     }
 
-    .menu li a {
-        font-size: 1.5rem;
+    .menu a {
+        width: auto;
+        text-align: end;
+        margin: 5px 20px;
     }
 
     main {
@@ -211,34 +297,28 @@ footer {
         align-items: center;
     }
 
-    .about-me {
-        width: 90%;
-    }
 
-    .about-me-bio {
+    .first-pag{
         flex-direction: column;
-    }
-
-    .about-me-bio img {
-        order: -1;
-        width: 150px;
-        margin: 0;
     }
 
     .my-country {
-        flex-direction: column;
-        margin: 20px 0;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .certificate-section {
+        height: auto;
     }
 
-    .img-my-country img {
-        width: 200px;
-        display: flex;
-        flex-direction: column;
+    .second-pag .title {
+        height: auto;
+        padding: 5px 0;
     }
-
-    .web-resources {
-        width: 90%;
-        margin: 20px 10px;
+    .second-part-courses {
+        margin: 15px 0;
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 10px;
     }
     footer {
         height: auto;
