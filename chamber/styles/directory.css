@@ -102,6 +102,15 @@ main {
     position: relative;
 }
 
+
+.first-part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 .first-part button {
     position: absolute;
     right: 5%;
@@ -375,6 +384,7 @@ footer img {
     .member-row {
         grid-template-columns: 25% 25% 20% 30%;
     }
+
     .member-card {
         width: 90%;
     }
