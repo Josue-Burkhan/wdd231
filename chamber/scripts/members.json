@@ -5,7 +5,7 @@
       "phone": "+51 51 123456",
       "website": "http://www.hoteltitikaka.com",
       "image": "images/hotel_titikaka.jpg",
-      "membership_level": 3,
+      "membership_level": "Gold",
       "description": "Luxury hotel offering stunning views of Lake Titicaca."
     },
     {
@@ -14,7 +14,7 @@
       "phone": "+51 51 654321",
       "website": "http://www.saboresandinos.com",
       "image": "images/sabores_andinos.png",
-      "membership_level": 2,
+      "membership_level": "Silver",
       "description": "Traditional Peruvian cuisine with a focus on local ingredients."
     },
     {
@@ -23,7 +23,7 @@
       "phone": "+51 51 987654",
       "website": "http://www.punotours.com",
       "image": "images/puno_tours_icon.jpg",
-      "membership_level": 3,
+      "membership_level": "Bronze",
       "description": "Tour operator specializing in Lake Titicaca excursions."
     },
     {
@@ -32,7 +32,7 @@
       "phone": "+51 51 876543",
       "website": "http://www.qhapaqnanart.com",
       "image": "images/qhapaq_nan.avif",
-      "membership_level": 1,
+      "membership_level": "Bronze",
       "description": "Handmade crafts inspired by Andean culture."
     },
     {
@@ -41,7 +41,7 @@
       "phone": "+51 51 112233",
       "website": "http://www.saludviva.com",
       "image": "images/salud_viva_icon.jpg",
-      "membership_level": 2,
+      "membership_level": "Silver",
       "description": "Private health clinic providing general and specialized care."
     },
     {
@@ -50,7 +50,7 @@
       "phone": "+51 51 998877",
       "website": "http://www.libreriatitikaka.com",
       "image": "images/libreria_titikaka.jpg",
-      "membership_level": 1,
+      "membership_level": "Bronze",
       "description": "Bookstore offering a wide selection of books and educational materials."
     },
     {
@@ -59,7 +59,7 @@
       "phone": "+51 51 334455",
       "website": "http://www.superlosandes.com",
       "image": "images/supermercado_andes.png",
-      "membership_level": 3,
+      "membership_level": "Gold",
       "description": "Large supermarket with a variety of local and imported products."
     }
   ]
