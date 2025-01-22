@@ -92,7 +92,7 @@ async function loadMembers() {
   }
 }
 
-// Llama a la función para cargar los miembros al cargar la página
+
 loadMembers();
 
 const apiKey = "3d039834201b427cfc00f8f1338afbe1";
