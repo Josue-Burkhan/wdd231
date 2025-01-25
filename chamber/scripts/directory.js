@@ -35,6 +35,8 @@ listButton.addEventListener("click", () => {
 });
 
 
+
+
 async function loadMembers() {
   try {
     const response = await fetch('scripts/members.json')
@@ -75,7 +77,7 @@ async function loadMembers() {
         row.classList.add("member-row");
 
         row.style.backgroundColor = index % 2 === 0 ? "#9c9c9c93" : "#ffffff93";
-        
+
         row.innerHTML = `
                           <div class="row">
                             <h3>${member.name}</h3>
@@ -113,6 +115,11 @@ async function getWeather() {
     const sunrise = new Date(currentData.sys.sunrise * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     const sunset = new Date(currentData.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
+    const iconImg = currentData.weather[0].icon;
+    const iconsrc = `https://openweathermap.org/img/wn/${iconImg}.png`;
+
+
+    document.getElementById('icon').setAttribute('src', iconsrc);
     document.getElementById('current-temp').textContent = `${currentTemp}°F`;
     document.getElementById('current-desc').textContent = `${currentDesc}`;
     document.getElementById('humidity').textContent = `HUMIDITY: ${humidity}%`;

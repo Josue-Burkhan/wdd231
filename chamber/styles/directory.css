@@ -86,35 +86,31 @@ main {
     padding: 0 10px;
 }
 
-.logo-section img {
-    mix-blend-mode: multiply;
-}
-
 .first-part {
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
     width: 90%;
-    height: 300px;
-    background-color: var(--secondaryColor);
-    margin: 50px auto 0 auto;
+    height: 95vh;
+    margin: 0 auto 0 auto;
     position: relative;
 }
 
 
 .first-part img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
 }
 
 
 .first-part button {
     position: absolute;
     right: 5%;
-    bottom: 10%;
+    bottom: 20%;
     padding: 5px 10px;
     background-color: var(--tertiaryColor);
     color: var(--blackText);
@@ -123,6 +119,15 @@ main {
     border: none;
     cursor: pointer;
     font-weight: 600;
+}
+
+h1 {
+    color: var(--blackText);
+    position: absolute;
+    font-size: 5vw;
+    width: 60%;
+    text-align: center;
+    top: 20%;
 }
 
 .second-part {
@@ -140,9 +145,11 @@ main {
     margin: 0 auto;
 }
 
-.second-part h1 {
+.second-part h2 {
     margin: 20px 0;
+    font-size: 2rem;
 }
+
 .section-content {
     height: 80%;
     width: 90%;
@@ -151,13 +158,15 @@ main {
     gap: 15px;
 }
 
-#weather, #forecast {
+#weather,
+#forecast {
     width: 100%;
     height: 100%;
     display: grid;
     justify-content: center;
     align-items: center
 }
+
 #weather p {
     color: var(--blackText)
 }
@@ -170,6 +179,19 @@ main {
 .section-part section {
     height: 280px;
     background-color: var(--fouthColor);
+    border-radius: 5px;
+}
+
+.section-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-content li {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
 
 .section-title {
@@ -178,6 +200,7 @@ main {
     padding: 10px;
     color: var(--blackText);
     background-color: var(--secondaryColor);
+    border-radius: 5px 5px 0 0;
 }
 
 .info {
@@ -365,8 +388,23 @@ footer img {
     }
 
     h3,
-    p {
+    p,
+    h2 {
         text-align: center;
+    }
+
+    .first-part {
+        margin: 0;
+        width: 100%;
+    }
+
+    .first-part img {
+        height: none;
+    }
+
+    h1 {
+        font-size: 10vw;
+        width: 80%;
     }
 
     .page-title {
@@ -394,17 +432,18 @@ footer img {
     }
 
     .first-part {
-        height: 180px;
+        height: 90vh;
         width: 100%;
     }
 
     .first-part img {
-        height: auto;
+        border-radius: unset;
     }
 
     .thirth-part {
-        width: 100%;
-        padding: 0 20px;
+        padding: 40px 0;
+        width: 93%;
+        margin: 40px auto;
     }
 
     .member-row {
