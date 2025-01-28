@@ -4,13 +4,14 @@
 }
 
 :root {
-    --principalColor: #345259;
-    --secondaryColor: #A6705D;
-    --tertiaryColor: #BFBDB0;
-    --fouthColor: #BFA084;
-    --whiteText: #fff;
-    --blackText: #000;
+    --principalColor: #134e5e;
+    --secondaryColor: #c9a27d;
+    --tertiaryColor: #a67c52;
+    --fouthColor: #f7fbfc;
+    --whiteText: #ffffff;
+    --blackText: #1a1a1a;
 }
+
 
 body {
     background-color: var(--principalColor);
@@ -228,7 +229,7 @@ h1 {
 
 .buttons-list button {
     padding: 5px 10px;
-    background-color: var(--secondaryColor);
+    background-color: var(--tertiaryColor);
     color: var(--blackText);
     border-radius: 5px;
     box-shadow: none;
@@ -273,7 +274,7 @@ h1 {
 }
 
 .member-card {
-    background-color: var(--tertiaryColor);
+    background-color: var(--secondaryColor);
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -323,7 +324,7 @@ h1 {
 footer {
     height: 130px;
     width: 100%;
-    background-color: var(--secondaryColor);
+    background-color: var(--tertiaryColor);
     display: flex;
     align-items: center;
     justify-content: center;
