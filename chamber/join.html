@@ -9,7 +9,7 @@
     <meta name="author" content="Josue A. Bailon Velasquez">
 
     <meta property="og:title" content="Puno - Chamber Directory" />
-    <meta property="og:type" content= website/>
+    <meta property="og:type" content='website'/>
     <meta property="og:url" content="https://josue-burkhan.github.io/wdd231/chamber/directory" />
     <meta property="og:image"
         content="https://josue-burkhan.github.io/wdd231/chamber/images/screenshotdirectory.webp" />
@@ -39,38 +39,44 @@
         </nav>
         <button id="menu">☰</button>
     </header>
-    <main>
-        <div class="membership-container">
-            <div class="membership-card" onclick="toggleContent('np-content')">
-                <h3>Non Profit Membership</h3>
-                <h4>Learn More</h4>
-                <div id="np-content" class="membership-content">
-                    Benefits: Free access to networking events, basic business listing, and community involvement.
-                </div>
+    <main id="main">
+        <div class="first-part">
+            <div class="title">
+                <h1>Appy with us!</h1>
             </div>
-            <div class="membership-card" onclick="toggleContent('bronze-content')">
-                <h3>Bronze Membership</h3>
-                <h4>Learn More</h4>
-                <div id="bronze-content" class="membership-content">
-                    Benefits: Includes all Non-Profit benefits plus social media promotions and event discounts.
+            <div class="membership-container">
+                <div class="membership-card" onclick="toggleContent('np-content')">
+                    <h3>Non Profit Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="np-content" class="membership-content">
+                        Benefits: Free access to networking events, basic business listing, and community involvement.
+                    </div>
                 </div>
-            </div>
-            <div class="membership-card" onclick="toggleContent('silver-content')">
-                <h3>Silver Membership</h3>
-                <h4>Learn More</h4>
-                <div id="silver-content" class="membership-content">
-                    Benefits: Includes all Bronze benefits plus featured business spotlights and training sessions.
+                <div class="membership-card" onclick="toggleContent('bronze-content')">
+                    <h3>Bronze Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="bronze-content" class="membership-content">
+                        Benefits: Includes all Non-Profit benefits plus social media promotions and event discounts.
+                    </div>
                 </div>
-            </div>
-            <div class="membership-card" onclick="toggleContent('gold-content')">
-                <h3>Gold Membership</h3>
-                <h4>Learn More</h4>
-                <div id="gold-content" class="membership-content">
-                    Benefits: Includes all Silver benefits plus priority sponsorship opportunities and VIP event access.
+                <div class="membership-card" onclick="toggleContent('silver-content')">
+                    <h3>Silver Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="silver-content" class="membership-content">
+                        Benefits: Includes all Bronze benefits plus featured business spotlights and training sessions.
+                    </div>
+                </div>
+                <div class="membership-card" onclick="toggleContent('gold-content')">
+                    <h3>Gold Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="gold-content" class="membership-content">
+                        Benefits: Includes all Silver benefits plus priority sponsorship opportunities and VIP event access.
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+
+        <div class="form-container">
             <form action="thankyou.html" method="get">
                 <h2>Personal Information</h2>
                 <label for="first-name">First Name</label>
@@ -99,7 +105,7 @@
 
                 <label for="membership-level">Membership Level</label>
                 <select id="membership-level" name="membership-level" title="Membership Level" required>
-                    <option value="np">NP Membership (No Fee)</option>
+                    <option value="np" selected>NP Membership (No Fee)</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
