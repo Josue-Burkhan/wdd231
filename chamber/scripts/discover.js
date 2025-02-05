@@ -1,4 +1,4 @@
-
+document.getElementById("last-modified").textContent = document.lastModified;
 function toggleContent(id) {
     const content = document.getElementById(id);
     if (content) {
