@@ -62,7 +62,7 @@ async function loadMembers() {
             </div>
             <hr>
             <div class="info">
-              <img src="${member.image}" alt="${member.name}" width="150">
+              <img src="${member.image}" alt="${member.name}" width="150" loading="lazy" decoding="async" fetchpriority="low" referrerpolicy="no-referrer">
               <div class="description">                      
                 <p>"${member.description || 'Business Tag Line'}"</p>
                 <p><strong>Address:</strong> ${member.address}</p>
