@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover the platform for aspiring writers at Wild Fantasy, where you can showcase your talent, connect with like-minded creators, and gain access to exclusive benefits. Join a creative community dedicated to bringing imaginative stories to life." />
+    <meta name="author" content="Josue A. Burkhan">
+
+    <meta property="og:title" content="Wild Fantasy Writers - siteplan" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://josue-burkhan.github.io/wdd231/siteplan" />
+    <meta property="og:image" content="https://josue-burkhan.github.io/wdd231/chamber/images/ogImagePusness.webp" />
+
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/Dragon-Belzerg.ico">
+
+    <title>Wild Fantasy Writers - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="wild-fantasy.com.html">
+                <img src="images/logo-wild-fantasy-white.png" alt="wild-fantasy logo white" width="170px">
+            </a>
+        </div>
+        <nav class="menu">
+            <a href="wild-fantasy.com.html"><span>Home</span></a>
+            <a href="benefits.html"><span>Our Benefits</span></a>
+            <a href="join.html"><span>Join</span></a>
+        </nav>
+        <button id="menu">☰</button>
+    </header>
+    <main id="main">
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <h2>Personal Information</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" title="Applicant's First Name"
+                    autocomplete="given-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" title="Applicant's Last Name"
+                    autocomplete="family-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email"
+                    placeholder="example@email.com" required>
+
+                <label for="phone">Mobile Phone Number</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                <hr>
+                <h2>Writer Profile</h2>
+                <label for="pen-name">Pen Name</label>
+                <input type="text" id="pen-name" name="pen-name" title="Pen Name" autocomplete="nickname" required>
+
+                <label for="writing-level">Writing Level</label>
+                <select id="writing-level" name="writing-level" title="Writing Level" required>
+                    <option value="" disabled selected>Choose your level</option>
+                    <option value="apprentice">Apprentice Writer</option>
+                    <option value="intermediate">Intermediate Writer</option>
+                    <option value="expert">Expert Writer</option>
+                    <option value="master">Master Storyteller</option>
+                </select>
+
+                <label for="writing-genre">Preferred Writing Genre</label>
+                <select id="writing-genre" name="writing-genre" title="Preferred Writing Genre" required>
+                    <option value="" disabled selected>Choose your genre</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="horror">Horror</option>
+                    <option value="mystery">Mystery</option>
+                </select>
+
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" title="Short Bio" rows="4"
+                    placeholder="Tell us a little about yourself..."></textarea>
+
+                <label for="social-media">Social Media Profile</label>
+                <input type="url" id="social-media" name="social-media" title="Social Media Profile"
+                    placeholder="e.g., https://www.instagram.com/yourprofile">
+
+                <hr>
+                <h2>Community Details</h2>
+                <label for="motivation">Why do you want to join Wild Fantasy?</label>
+                <textarea id="motivation" name="motivation" title="Why join Wild Fantasy?" rows="4"
+                    placeholder="Share your reasons for joining..."></textarea>
+
+                <input type="submit" value="Join the Community">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">© <span id="currentyear"></span> Wild Fantasy</p>
+    </footer>
+
+<script src="scripts/join.js"></script>
+</body>
+
+</html>

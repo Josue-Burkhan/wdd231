@@ -1,0 +1,32 @@
+{
+    "wild_fantasy_team": [
+        {
+            "name": "Joshua_Goose",
+            "role": "Author",
+            "age": 22,
+            "country": "Peru",
+            "description": "An author who loves being highly detailed and realistic in his isekai fantasy novels."
+        },
+        {
+            "name": "Art-ur",
+            "role": "Author",
+            "age": 24,
+            "country": "Ecuador",
+            "description": "Enjoys writing apocalyptic stories set in our world, blending science fiction with adventure."
+        },
+        {
+            "name": "Kuvin",
+            "role": "Artist",
+            "age": 24,
+            "country": "Peru",
+            "description": "Loves being an artist, creating spectacular backgrounds for novels."
+        },
+        {
+            "name": "Burkhan",
+            "role": "Developer",
+            "age": 32,
+            "country": "USA",
+            "description": "An experienced developer who builds platforms ensuring comfort for readers and authors."
+        }
+    ]
+}
