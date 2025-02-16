@@ -492,7 +492,6 @@ a:hover span {
         position: relative;
     }
 
-    /* El contenedor animado */
     .benefits-list {
         display: flex;
         flex-direction: column;
@@ -501,6 +500,12 @@ a:hover span {
 
     .benefit-item {
         flex: 0 0 auto;
+    }
+    #community {
+        min-height: 80vh;
+    }
+    .community-no-blur {
+        grid-template-rows: none;
     }
 
     @keyframes scrollTop {
