@@ -6,12 +6,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Sirve archivos estáticos desde la carpeta 'public'
+
 app.use(express.static("public"));
 
 app.post("/translate", async (req, res) => {
   const { text } = req.body;
-  const targetLangs = ["ES", "EN", "JA"]; // DeepL espera los códigos en mayúsculas
+  const targetLangs = ["ES", "EN", "JA"];
   let translations = {};
 
   try {

@@ -196,6 +196,8 @@ option::selection {
     height: 70vh;
     margin: 0 auto;
     text-align: center;
+    background-color: #000000a2;
+    color: var(--whiteText);
 }
 .info-container p {
     margin: 15px 0;
